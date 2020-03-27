@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Store Directory</string>
+
+    <string name="store_icon_content_description">Store icon</string>
+    <string name="address_formatted">%1$s\n%2$s, %3$s %4$s \n%5$s</string>
+    <string name="telephone_uri">"tel:%1$s</string>
+    <string name="address_overline_text">Store address</string>
+    <string name="call_store_text">Call the store</string>
+    <string name="map_overline_text">Map location</string>
+    <string name="navigate_button_text">Take me there</string>
+    <string name="backdrop_content_description">Store backdrop image</string>
+    <string name="error_text">Unable to load content. Please retry.</string>
+    <string name="retry_button_text">Retry</string>
+</resources>

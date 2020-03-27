@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/store_list"
+    tools:ignore="UnusedNavigation">
+    <fragment
+        android:id="@+id/store_list"
+        android:name="com.example.android.storedirectory.ui.storelist.StoreListFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/store_list_fragment">
+        <action
+            android:id="@+id/action_store_list_to_detail"
+            app:destination="@id/detail"
+            app:popUpTo="@id/store_list" />
+    </fragment>
+    <fragment
+        android:id="@+id/detail"
+        android:name="com.example.android.storedirectory.ui.detail.DetailFragment"
+        android:label="Store Details"
+        tools:layout="@layout/detail_fragment">
+        <argument
+            android:name="store"
+            app:argType="com.example.android.storedirectory.model.Store" />
+    </fragment>
+</navigation>
